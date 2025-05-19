@@ -1,0 +1,17 @@
+{
+  "id": "nodebb-plugin-error-override",
+  "name": "Error 403 Override",
+  "description": "Overrides 403 error page with a custom message and link",
+  "version": "1.0.0",
+  "main": "library.js",
+  "license": "MIT",
+  "nbbpm": {
+    "compatibility": "^4.0.0"
+  },
+  "hooks": [
+    {
+      "hook": "filter:error.get",
+      "method": "filterErrorGet"
+    }
+  ]
+}
